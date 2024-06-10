@@ -1,0 +1,35 @@
+﻿<Window x:Class="VP_Project_SYSTEM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VP_Project_SYSTEM"
+        mc:Ignorable="d"
+        Title="NUTECH Student Management System" Height="550" Width="820" WindowStartupLocation="CenterScreen" 
+ResizeMode="CanMinimize" ShowInTaskbar="True" Icon="media/logo2.jpeg">
+    <Window.Background>
+        <ImageBrush ImageSource="media/bg.jpg" Stretch="None"/>
+    </Window.Background>
+    <Grid>
+        <Image  Source="/media/logo.png" Margin="307,-25,307,0" Height="168" VerticalAlignment="Top"></Image>
+        <Border BorderThickness="2" Background="#FFE9B6B6" BorderBrush="#FF1A1A1A" CornerRadius="20" VerticalAlignment="Top" Padding="0" Height="78" 
+            Margin="415,400,221,0">
+            <Button Content="Student" BorderThickness="0" FontSize="24" TabIndex="1" FontWeight="Bold" 
+                VerticalAlignment="Center" Height="42" Click="Student_Click" Foreground="#FF000505" Background="#FFE9B6B6"
+                FontFamily="Arial" BorderBrush="#FF080808" Margin="14,0,14,0"/>
+        </Border>
+        <Border BorderThickness="2" Background="#FF4FBFFB" BorderBrush="#FF1A1A1A" CornerRadius="20" VerticalAlignment="Top" Padding="0" Height="78" 
+            Margin="225,400,410,0">
+            <Button Content="Teacher" BorderThickness="0" FontSize="24" TabIndex="2" 
+                VerticalAlignment="Center" Height="42" Click="Teacher_Click" Foreground="Black" Background="#FF4FBFFB" 
+                FontFamily="Arial" BorderBrush="#FF1A1A1A" Margin="14,0,14,0" FontWeight="Bold"/>
+        </Border>
+        <Label Content="Student Management System" 
+            FontSize="36" FontWeight="Bold" Foreground="#FF35631F" 
+            HorizontalAlignment="Center" Margin="0,75,0,0" VerticalAlignment="Top" Height="68" Width="536" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="{x:Null}"/>
+        <Image HorizontalAlignment="Left" Height="220" Margin="400,158,0,0" VerticalAlignment="Top" Width="390" Source="/Media/nutech.jpg" IsEnabled="False"/>
+        <TextBlock Margin="28,158,0,0" TextWrapping="WrapWithOverflow" Text="NUTECH Student Management System: Empowering Futures, Shaping Leaders. Seamlessly navigate your academic journey with precision and ease. Elevating education through innovation and efficiency. Your gateway to holistic student development. Experience excellence, embrace opportunity, with NUTECH SMS." VerticalAlignment="Top" Width="340" HorizontalAlignment="Left" FontFamily="Calibri" FontWeight="Bold" FontSize="20" TextAlignment="Justify" RenderTransformOrigin="0.503,0.637"/>
+    </Grid>
+</Window>
+
+    

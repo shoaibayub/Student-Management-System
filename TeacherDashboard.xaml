@@ -1,0 +1,106 @@
+﻿<Window x:Class="VP_Project_SYSTEM.TeacherDashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VP_Project_SYSTEM"
+        mc:Ignorable="d"
+            Title="NUTECH Teacher Information Form" Height="800" Width="1000" WindowStartupLocation="CenterScreen" ResizeMode="CanResize" ShowInTaskbar="True" Icon="media/logo2.jpeg">
+    <Window.Background>
+        <ImageBrush ImageSource="/media/bg.jpg" Stretch="None"/>
+    </Window.Background>
+    <Grid Margin="0,0,0,-10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="1000"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto" MinWidth="0"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/media/bg.jpg" Stretch="None"/>
+        </Grid.Background>
+
+        <Label Content="Teacher Profile" FontSize="30" FontWeight="Bold" Foreground="Black" HorizontalAlignment="Left" Margin="213,24,0,0" VerticalAlignment="Top" Height="50" Width="333"/>
+
+        <!-- Teacher Name Label -->
+        <Label Content="Name" FontSize="16" FontWeight="Bold" FontFamily="Arial" HorizontalAlignment="Left" Margin="104,104,0,0" VerticalAlignment="Top" Height="40" Width="128" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+
+        <!-- Email Label -->
+        <Label Content="Email" FontSize="16" FontWeight="Bold" FontFamily="Arial" HorizontalAlignment="Left" Margin="110,155,0,0" VerticalAlignment="Top" Height="42" Width="116" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <!-- Address Label -->
+        <Label Content="Address" FontSize="16" FontWeight="Bold" FontFamily="Arial" HorizontalAlignment="Left" Margin="110,205,0,0" VerticalAlignment="Top" Height="40" Width="116" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <!-- Department ID Label -->
+        <Label Content="Department" FontSize="16" FontWeight="Bold" FontFamily="Arial" HorizontalAlignment="Left" Margin="110,255,0,0" VerticalAlignment="Top" Height="40" Width="122" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <!-- Contact Label -->
+        <Label Content="Contact" FontSize="16" FontWeight="Bold" FontFamily="Arial" HorizontalAlignment="Left" Margin="110,305,0,0" VerticalAlignment="Top" Height="40" Width="116" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <!-- Password Label -->
+        <Label Content="Password" FontSize="16" FontWeight="Bold" FontFamily="Arial" HorizontalAlignment="Left" Margin="110,355,0,0" VerticalAlignment="Top" Height="40" Width="116" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <!-- Teacher Name TextBox -->
+        <Border BorderThickness="2" BorderBrush="#FFB57036" CornerRadius="15" Padding="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="268,101,0,0" Height="46" Width="244">
+            <TextBox Opacity="1" x:Name="tbTeacherName" TabIndex="1" FontSize="18" VerticalAlignment="Center" Height="32" Width="230" BorderThickness="0" TextAlignment="Center" Background="{x:Null}" HorizontalAlignment="Left"/>
+        </Border>
+
+        <!-- Email TextBox -->
+        <Border BorderThickness="2" BorderBrush="#FFB57036" CornerRadius="15" Padding="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="268,153,0,0" Height="46" Width="244">
+            <TextBox Opacity="1" x:Name="tbEmail" TabIndex="2" FontSize="16" Height="32" Width="230" BorderThickness="0" TextAlignment="Center" Background="{x:Null}" HorizontalAlignment="Center"/>
+        </Border>
+
+        <!-- Address TextBox -->
+        <Border BorderThickness="2" BorderBrush="#FFB57036" CornerRadius="15" Padding="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="268,204,0,0" Height="46" Width="244">
+            <TextBox Opacity="1" x:Name="tbAddress" TabIndex="3" FontSize="16" Height="32" Width="230" BorderThickness="0" TextAlignment="Center" Background="{x:Null}" HorizontalAlignment="Left"/>
+        </Border>
+
+        <!-- Department ID TextBox -->
+        <Border BorderThickness="2" BorderBrush="#FFB57036" CornerRadius="15" Padding="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="268,256,0,0" Height="46" Width="244">
+            <TextBox Opacity="1" x:Name="tbDepartmentID" TabIndex="4" FontSize="16" Height="32" Width="230" BorderThickness="0" TextAlignment="Center" Background="{x:Null}" HorizontalAlignment="Left"/>
+        </Border>
+
+        <!-- Contact TextBox -->
+        <Border BorderThickness="2" BorderBrush="#FFB57036" CornerRadius="15" Padding="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="268,306,0,0" Height="46" Width="244">
+            <TextBox Opacity="1" x:Name="tbContact" TabIndex="5" FontSize="16" Height="32" Width="230" BorderThickness="0" TextAlignment="Center" Background="{x:Null}" HorizontalAlignment="Left"/>
+        </Border>
+
+        <!-- Password TextBox -->
+        <Border BorderThickness="2" BorderBrush="#FFB57036" CornerRadius="15" Padding="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="268,356,0,0" Height="46" Width="244">
+            <PasswordBox Opacity="1" x:Name="tbPassword" TabIndex="6" FontSize="16" Height="32" Width="230" BorderThickness="0" Background="{x:Null}" HorizontalAlignment="Left"/>
+        </Border>
+
+        <!-- Clear Button -->
+        <Border BorderThickness="2" Background="#FFFBB360" BorderBrush="#FF1A1A1A" CornerRadius="20" VerticalAlignment="Top" Padding="0" Height="44" Margin="611,150,145,0">
+            <Button Content="Clear" BorderThickness="0" FontSize="17" TabIndex="7" FontWeight="Bold" VerticalAlignment="Center" Height="34" Click="Clear_Click" Foreground="#FF000505" Background="#FFFBB360" FontFamily="Arial" BorderBrush="#FF1A1A1A" Margin="14,0,14,0"/>
+        </Border>
+
+        <!-- Sign-Up Button -->
+        <Border BorderThickness="2" Background="#FF12758E" BorderBrush="#FF1A1A1A" CornerRadius="20" VerticalAlignment="Top" Padding="0" Height="44" Margin="611,199,145,0">
+            <Button Content="Update" BorderThickness="0" FontSize="17" TabIndex="8" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="201" Click="Update_Click" Foreground="White" Background="#FF12758E" FontFamily="Arial" BorderBrush="#FF1A1A1A"/>
+        </Border>
+
+        <Image Source="media/logo.png" HorizontalAlignment="Left" Height="104" Margin="83,0,0,0" VerticalAlignment="Top" Width="97"/>
+        <Border BorderThickness="2" Background="#FF7EE732" BorderBrush="#FF1A1A1A" CornerRadius="20" VerticalAlignment="Top" Padding="0" Height="44" Margin="611,251,145,0">
+            <Button Content="View Student" BorderThickness="0" FontSize="17" TabIndex="8" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="201" Click="View_StudentClick" Foreground="Black" Background="#FF7EE732" FontFamily="Arial" BorderBrush="#FF1A1A1A"/>
+        </Border>
+        <DataGrid x:Name="datagrid" CanUserSortColumns = "False" IsReadOnly="True" HorizontalScrollBarVisibility="Visible" RowHeight="30" ColumnWidth="120" GridLinesVisibility="Vertical"  HeadersVisibility="All" VerticalScrollBarVisibility="Visible" BorderBrush="DarkGreen" BorderThickness="4" HorizontalAlignment="Center" Height="172" Margin="0,559,0,0" VerticalAlignment="Top"
+            d:ItemsSource="{d:SampleData ItemCount=5}" SelectionMode="Extended" Background="LightYellow" RowBackground="LightBlue" AlternatingRowBackground="LightPink" Width="710"/>
+
+        <Border BorderThickness="2" Background="#FF7EE732" BorderBrush="#FF1A1A1A" CornerRadius="20" VerticalAlignment="Top" Padding="0" Height="44" Margin="611,300,145,0">
+            <Button Content="Show Teacher" BorderThickness="0" FontSize="17" TabIndex="8" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="30" Width="200" Click="TeacherProfile_Click" Foreground="Black" Background="#FF7EE732" FontFamily="Arial" BorderBrush="#FF1A1A1A" Margin="0,0,0,5"/>
+        </Border>
+        <Border BorderThickness="2" Background="#FFFBB360" BorderBrush="#FF1A1A1A" CornerRadius="20" VerticalAlignment="Top" Padding="0" Height="44" Margin="611,100,145,0">
+            <Button Content="Sign Out" BorderThickness="0" FontSize="17" TabIndex="7" FontWeight="Bold" VerticalAlignment="Center" Height="34" Click="SignOut_Click" Foreground="#FF000505" Background="#FFFBB360" FontFamily="Arial" BorderBrush="#FF1A1A1A" Margin="14,0,14,0"/>
+        </Border>
+        <TextBox HorizontalAlignment="Left" Margin="379,421,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Background="Transparent" BorderBrush="{x:Null}" FontFamily="Calibri" Height="23" FontSize="18" FontWeight="Bold" Text="Enter Teacher Name:"/>
+        <Border BorderThickness="2" BorderBrush="#FFB57036" CornerRadius="15" Padding="5"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="380,449,0,0" Height="46" Width="244">
+            <TextBox Opacity="1" x:Name="tbSearch" FontSize="16" TabIndex="10" Height="32" Width="227" BorderThickness="0" TextAlignment="Center"  Background="{x:Null}" HorizontalAlignment="Left" />
+        </Border>
+        <Border BorderThickness="2" Background="#FFE31111" BorderBrush="#FF1A1A1A" CornerRadius="20" VerticalAlignment="Top" Padding="0" Height="44" Margin="611,351,145,0">
+            <Button Content="Delete" BorderThickness="0" FontSize="17" TabIndex="14" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="198" Click="delete_Click" Foreground="#FFDEEEF5" Background="#FFE31111" FontFamily="Arial" BorderBrush="#FF1A1A1A"/>
+        </Border>
+        <Button  Content="Search " HorizontalAlignment="Left" Margin="556,500,0,0" VerticalAlignment="Top" Width="68" Height="26" FontFamily="Calibri" FontSize="16" Background="#FFCEDBD5" Click="Search_Click" FontStyle="Italic"/>
+    </Grid>
+</Window>
+    
+    
